@@ -73,3 +73,22 @@ export const describeIt = (condition) => {
     ''
   )
 }
+
+// Le immagini di OpenWeather per sereno e neve sono quasi nere: sul fondo
+// scuro dell'app diventano delle palle nere (il famoso "sole nero"). Le emoji
+// si vedono su qualsiasi sfondo e richiedono zero richieste di rete.
+export const iconFor = (condition, day = true) => {
+  if (!condition) return null
+  const id = condition.id
+  if (id === 800) return day ? '☀️' : '🌕'
+  if (id === 801) return day ? '🌤️' : '☁️'
+  if (id === 802) return '⛅'
+  if (id === 803) return '🌥️'
+  if (id === 804) return '☁️'
+  if (id >= 200 && id < 300) return '⛈️'
+  if (id >= 300 && id < 400) return '🌦️'
+  if (id >= 500 && id < 600) return '🌧️'
+  if (id >= 600 && id < 700) return '🌨️'
+  if (id >= 700 && id < 800) return '🌫️'
+  return '🌡️'
+}

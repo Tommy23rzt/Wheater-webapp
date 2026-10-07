@@ -1,5 +1,5 @@
 import React from 'react'
-import { iconUrl } from '../services/weather'
+import { iconFor } from '../services/weatherLabels'
 
 function Forecast({ days }) {
   if (!days?.length) return null
@@ -12,13 +12,14 @@ function Forecast({ days }) {
           <li key={day.dt}>
             <span className="day">{day.label}</span>
 
-            {day.icon ? (
-              <img
+            {day.id ? (
+              <span
                 className="day-icon"
-                src={iconUrl(day.icon)}
-                alt=""
-                loading="lazy"
-              />
+                role="img"
+                aria-label={day.description}
+              >
+                {iconFor({ id: day.id })}
+              </span>
             ) : null}
 
             <span className="day-temp">{day.temp}°</span>

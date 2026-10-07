@@ -14,9 +14,6 @@ export class NotFoundError extends Error {
   }
 }
 
-export const iconUrl = (icon) =>
-  icon ? `https://openweathermap.org/img/wn/${icon}@2x.png` : null
-
 // L'API /forecast dà 40 slot da 3h. Li raggruppiamo per giorno locale,
 // usando lo shift del timezone della città per NON far doppio calcolo.
 // currentTemp serve per il primo giorno, che è parziale (solo gli slot

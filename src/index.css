@@ -206,8 +206,10 @@ body {
 }
 
 .weather-icon {
-  width: clamp(54px, 22vw, 90px);
-  height: clamp(54px, 22vw, 90px);
+  /* ora è una emoji (è cambiata la gestione delle icone): si dimensiona col
+     font, non con width/height */
+  font-size: clamp(3.2rem, 13vw, 5.4rem);
+  line-height: 1;
 }
 
 .app .temp h1 {
@@ -297,8 +299,9 @@ body {
 }
 
 .day-icon {
-  width: 2.2rem;
-  height: 2.2rem;
+  /* emoji: si dimensiona col font */
+  font-size: 1.9rem;
+  line-height: 1;
 }
 
 .day-temp {

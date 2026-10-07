@@ -1,6 +1,5 @@
 import React from 'react'
-import { iconUrl } from '../services/weather'
-import { describeIt } from '../services/weatherLabels'
+import { describeIt, iconFor } from '../services/weatherLabels'
 
 function formatLocalTime(unixSeconds, offsetSeconds) {
   return new Date((unixSeconds + offsetSeconds) * 1000).toLocaleTimeString('it-IT', {
@@ -28,12 +27,14 @@ function CurrentWeather({ data, approximate = false }) {
       </div>
 
       <div className="now">
-        {condition?.icon ? (
-          <img
+        {condition ? (
+          <span
             className="weather-icon"
-            src={iconUrl(condition.icon)}
-            alt=""
-          />
+            role="img"
+            aria-label={describeIt(condition)}
+          >
+            {iconFor(condition, condition.icon?.endsWith('d') !== false)}
+          </span>
         ) : null}
         <div className="temp">
           {data.main ? <h1>{data.main.temp.toFixed(1)}°C</h1> : null}
