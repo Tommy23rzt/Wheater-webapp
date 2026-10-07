@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Wheater-webapp/static/css/main.8ee4c086.css",
+    "main.js": "/Wheater-webapp/static/js/main.52d94632.js",
+    "static/media/sunny1.webp": "/Wheater-webapp/static/media/sunny1.d73b21ddda1d49cff904.webp",
+    "static/media/bg-snow.webp": "/Wheater-webapp/static/media/bg-snow.e0c2b3282a8b8c196f0b.webp",
+    "static/media/bg-clouds.webp": "/Wheater-webapp/static/media/bg-clouds.b0735b5897a058706dd9.webp",
+    "static/media/bg-clear.webp": "/Wheater-webapp/static/media/bg-clear.92ec3a07daa15fc16dd3.webp",
+    "static/media/bg-mist.webp": "/Wheater-webapp/static/media/bg-mist.4d8ab3d428224b4bc724.webp",
+    "static/media/bg-few-clouds.webp": "/Wheater-webapp/static/media/bg-few-clouds.3d6b22f8bad55b80c0e8.webp",
+    "static/media/bg-drizzle.webp": "/Wheater-webapp/static/media/bg-drizzle.20099a87a94021ca62db.webp",
+    "static/media/bg-thunderstorm.webp": "/Wheater-webapp/static/media/bg-thunderstorm.14292c9dbc5077dd0399.webp",
+    "static/media/bg-overcast.webp": "/Wheater-webapp/static/media/bg-overcast.9f8796627ff3a45f3c44.webp",
+    "static/media/bg-rain.webp": "/Wheater-webapp/static/media/bg-rain.1dec404e99943c19ed61.webp",
+    "index.html": "/Wheater-webapp/index.html",
+    "main.8ee4c086.css.map": "/Wheater-webapp/static/css/main.8ee4c086.css.map",
+    "main.52d94632.js.map": "/Wheater-webapp/static/js/main.52d94632.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ee4c086.css",
+    "static/js/main.52d94632.js"
+  ]
+}
